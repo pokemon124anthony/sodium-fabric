@@ -9,8 +9,8 @@ on:
 env:
 
   # EDIT DEFAULT_COMMAND AND DEFAULT_RETRY_COMMAND IF YOU WANT
-  DEFAULT_COMMAND: timeout 5000 python ms_rewards_farmer.py --headless --dont-check-for-updates --superfast --skip-unusual --shuffle --no-images --discord ${{ secrets.webhook }} --on-finish exit
-  DEFAULT_RETRY_COMMAND: timeout 3000 python ms_rewards_farmer.py --headless --dont-check-for-updates --dont-check-internet --superfast --shuffle --skip-unusual --no-images --discord ${{ secrets.webhook }} --on-finish exit
+  DEFAULT_COMMAND: python ms_rewards_farmer.py --headless --dont-check-for-updates --superfast --skip-unusual --shuffle --no-images --discord ${{ secrets.webhook }} --on-finish exit
+  DEFAULT_RETRY_COMMAND: python ms_rewards_farmer.py --headless --dont-check-for-updates --dont-check-internet --superfast --shuffle --skip-unusual --no-images --discord ${{ secrets.webhook }} --on-finish exit
   
   ACCOUNT: ${{ secrets.ACCOUNTS }}
   GITHUB_TOKEN: ${{ github.token }}
