@@ -1,4 +1,4 @@
-name: Commit-IST
+name: Sodium-fabric
 
 on:
   workflow_dispatch:
